@@ -11,10 +11,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php if (has_post_thumbnail()) the_post_thumbnail();  ?>
+		<?php //the_title( '<h1 class="entry-title text-center">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content col-xs-12">
 		<?php
 			the_content();
 
@@ -26,7 +27,7 @@
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+		<footer class="entry-footer col-xs-12">
 			<?php
 				edit_post_link(
 					sprintf(
@@ -34,7 +35,7 @@
 						esc_html__( 'Edit %s', 'taopr' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
-					'<span class="edit-link">',
+					'<span class="edit-link btn btn-primary">',
 					'</span>'
 				);
 			?>

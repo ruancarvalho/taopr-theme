@@ -15,9 +15,21 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'taopr' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'taopr' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'taopr' ), 'taopr', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<hr>
+			<div class="col-sm-2">
+				<img src="img/taopr-logo-footer.png" alt="" class="img-responsive">
+			</div>
+			<div class="col-sm-2 col-sm-offset-4">
+				<p>+55 11 3057 3138</p>
+			</div>
+			<div class="col-sm-2">
+				<p>contato@taopr.com</p>
+			</div>
+			<div class="col-sm-2">
+				<p>R. Joaquim Antunes, 727<br>
+				Pinheiros, São Paulo - SP <br>
+				05415-000</p>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

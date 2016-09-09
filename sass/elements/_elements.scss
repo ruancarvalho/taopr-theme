@@ -28,6 +28,12 @@ hr {
 	margin-bottom: 1.5em;
 }
 
+hr.fancy {
+	background-color: #23d5bb;
+	height: 125px;
+	margin: 0;
+}
+
 @import "lists";
 
 img {

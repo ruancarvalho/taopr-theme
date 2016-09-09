@@ -61,9 +61,19 @@ function taopr_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'taopr_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => '000000',
 		'default-image' => '',
 	) ) );
+
+	add_theme_support( 'custom-logo', array(
+		'height'      => 100,
+		'width'       => 150,
+		'flex-height' => true,
+		'flex-width'  => true,
+		'header-text' => array( 'site-title', 'site-description' ),
+	));
+
+
 }
 endif;
 add_action( 'after_setup_theme', 'taopr_setup' );
@@ -102,6 +112,7 @@ add_action( 'widgets_init', 'taopr_widgets_init' );
  * Enqueue scripts and styles.
  */
 function taopr_scripts() {
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
 	wp_enqueue_style( 'taopr-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'taopr-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
