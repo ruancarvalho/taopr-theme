@@ -14,3 +14,27 @@ textarea {
 @import "headings";
 
 @import "copy";
+
+.lead {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.5;
+	margin: 0px;
+	padding: 100px 0;
+	text-align: center;
+}
+
+.bg-primary {
+	background-color: $color__primary;
+	color: white;
+}
+
+.bg-success {
+	background-color: $color__success;
+	color: black;
+}
+
+.bg-info {
+	background-color: $color__info;
+	color: black;
+}

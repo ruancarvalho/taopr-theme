@@ -27,3 +27,44 @@ function taopr_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'taopr_body_classes' );
+
+/**
+ *
+ */
+function taopr_social_buttons() {
+    $id = get_theme_mod('tao_twitter');
+
+    if (!empty($id)) {
+        $url = 'http://www.twitter.com/' . $id;
+        echo '<a href="' . $url .'" target="_blank">';
+        echo '<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>';
+        echo '</a>';
+    }
+
+    $id = get_theme_mod('tao_facebook');
+
+    if (!empty($id)) {
+        $url = 'http://www.facebook.com/' . $id;
+        echo '<a href="' . $url .'" target="_blank">';
+        echo '<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>';
+        echo '</a>';
+    }
+
+    $id = get_theme_mod('tao_youtube');
+
+    if (!empty($id)) {
+        $url = 'http://www.youtube.com/' . $id;
+        echo '<a href="' . $url .'" target="_blank">';
+        echo '<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>';
+        echo '</a>';
+    }
+
+    $id = get_theme_mod('tao_instagram');
+
+    if (!empty($id)) {
+        $url = 'http://www.instagram.com/' . $id;
+        echo '<a href="' . $url .'" target="_blank">';
+        echo '<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>';
+        echo '</a>';
+    }
+}

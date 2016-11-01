@@ -36,10 +36,14 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation col-sm-9 col-md-6" role="navigation">
+		<nav id="site-navigation" class="main-navigation col-sm-9 col-md-8" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'taopr' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+
+		<div class="site-social hidden-xs hidden-sm col-md-2">
+			<?php taopr_social_buttons(); ?>
+		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content row">

@@ -17,3 +17,28 @@ a {
 		outline: 0;
 	}
 }
+
+a.btn-default {
+    background: #ffffff url('img/taopr-button.png') no-repeat left center;
+
+    border: none;
+    color: $color__primary;
+    font-weight: bold;
+    padding: 6px 12px 6px 24px;
+    text-transform: uppercase;
+
+    :hover {
+	    background-color: #fff;
+    	border: none;
+    }
+
+    :visited {
+    	color: $color__primary;
+    }
+}
+
+.btn-default:hover {
+    color: #333333;
+    background-color: #fff;
+	border-color: $color__primary;
+}

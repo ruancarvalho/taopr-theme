@@ -12,27 +12,27 @@
 ?>
 
 	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<hr>
-			<div class="col-sm-2">
-				<img src="img/taopr-logo-footer.png" alt="" class="img-responsive">
-			</div>
-			<div class="col-sm-2 col-sm-offset-4">
-				<p>+55 11 3057 3138</p>
-			</div>
-			<div class="col-sm-2">
-				<p>contato@taopr.com</p>
-			</div>
-			<div class="col-sm-2">
-				<p>R. Joaquim Antunes, 727<br>
-				Pinheiros, São Paulo - SP <br>
-				05415-000</p>
-			</div>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
 </div><!-- #page -->
+
+<footer id="colophon" class="site-footer container" role="contentinfo">
+	<div class="site-info">
+		<hr>
+		<div class="col-sm-2">
+			<img src="img/taopr-logo-footer.png" alt="" class="img-responsive">
+		</div>
+		<div class="col-sm-2 col-sm-offset-4">
+			<p>+55 11 3057 3138</p>
+		</div>
+		<div class="col-sm-2">
+			<p>contato@taopr.com</p>
+		</div>
+		<div class="col-sm-2">
+			<p>R. Joaquim Antunes, 727<br>
+			Pinheiros, São Paulo - SP <br>
+			05415-000</p>
+		</div>
+	</div><!-- .site-info -->
+</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
 

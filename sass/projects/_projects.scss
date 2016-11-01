@@ -1,0 +1,25 @@
+.projects ul.projects li.project, 
+.projects-page ul.projects li.project {
+    margin: 0 0 0.618em;
+	position: relative;
+	text-align: left;
+	width: 100%;
+
+	.project-panel {
+		background-color: $color__primary;
+		left: 1em;
+		padding: 0 20px;
+		position: absolute;
+		top: 3em;
+		width: 200px;
+	}
+
+	.short-description {
+		color: $color__text-screen;
+	}
+
+}
+
+.single-project .project {
+    margin-bottom: 0em;
+}

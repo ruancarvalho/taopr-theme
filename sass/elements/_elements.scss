@@ -29,8 +29,8 @@ hr {
 }
 
 hr.fancy {
-	background-color: #23d5bb;
-	height: 125px;
+	background: $color__success url('img/taopr-fancy-divider.png') no-repeat;
+	height: 123px;
 	margin: 0;
 }
 
@@ -42,3 +42,7 @@ img {
 }
 
 @import "tables";
+
+p > img {
+    margin: -1em 0 !important;
+}

@@ -6,3 +6,19 @@
 		max-width: 100%;
 	}
 }
+
+.social-widget .social-items {
+	height: 600px;
+}
+
+.social-widget .social-items div {
+	height: 100%;
+}
+
+.social-widget header h3 {
+	color: $color__success;
+	font-size: 1.1em;
+	margin-bottom: 0;
+	padding: 0.8em 0;
+	text-align: center;
+}

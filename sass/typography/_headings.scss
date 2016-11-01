@@ -1,8 +1,14 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: "IntroW01-LightCaps";
 	text-transform: uppercase;
 }
 
 h2 {
 	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.4em;
+	font-weight: normal;
 }
